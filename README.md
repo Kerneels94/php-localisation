@@ -30,15 +30,11 @@ This is a simple example of how to use gettext in php in WSL (Windows Subsystem 
 ```
 require 'vendor/autoload.php';
 
-// Set language to German
-putenv('LC_MESSAGES=fr_FR.utf8');
+// Set language to French
 setlocale(LC_MESSAGES, 'fr_FR.utf8');
 
 // Specify location of translation tables
 bindtextdomain("messages", "./locale");
-
-// Choose domain
-textdomain("messages");
 
 // Print a test message
 echo gettext("Hello");
