@@ -1,0 +1,9 @@
+{
+    "name": "korrels/php-tests",
+    "autoload": {
+        "psr-4": {
+            "Korrels\\PhpTests\\": "src/"
+        }
+    },
+    "require": {}
+}
